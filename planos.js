@@ -1,10 +1,4 @@
 //funcion tradicional
-//let planos=[1,1102,2234,1238,1392]
-
-// let bsp= planos.some(function (numero) {
-//      return console.log(numero>=10)
-// })
-
 
 function filtrarPlanos(fplanos, arrancarNave) {
 
@@ -15,7 +9,7 @@ function filtrarPlanos(fplanos, arrancarNave) {
      arrancarNave(filto)
 }
 
-let planos = []
+let planos = [1,3]
 
 filtrarPlanos(planos, function (filtro) {
      let cuenta = filtro.length
@@ -33,13 +27,13 @@ let FFplanos=(planos,arrancarnave)=>{
      arrancarnave(Ffiltro)
 }
 
-let Fplanos=[20,23]
+let Fplanos=[1,2]
 
 FFplanos(Fplanos,(filtroF)=>{
      let contar= filtroF.length
-     if (cuenta > 0) {
-          console.log("Arranque papito metale chancleta.")
+     if (contar > 0) {
+          console.log("Arranque papito metale chancleta flecha.");
      } else {
-          console.log("Demalas papi esos planos no son.")
+          console.log("Demalas papi esos planos no son flecha.")
      }
 })

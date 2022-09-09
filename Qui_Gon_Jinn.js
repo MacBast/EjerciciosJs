@@ -12,20 +12,25 @@ for (let i = 0; i < ctsa; i++) {
      sables.push(ves);
 }
 
-//encontrando sables defectuosos forma flecha
-//let filtro=sables.filter(numero=>numero<0)
-
 function respuesta() {
      let filtro = sables.filter(numero => numero < 0)
      return filtro
 }
 let rr=respuesta()
 
-console.log(`La cantidad escogida aleatoreamente es de ${ctsa}`)
-console.log(`Este es el tamano del array sables ${sables.length}`)
-console.log(`Estos sus valores ${sables}`)
-console.log(`Esta es la cantidad de sables defectuosos: ${rr.length}`)
-console.log(`Y estos son sus valores ${rr}`)
 
+//encontrando sables defectuosos forma flecha
+let filtro=sables.filter(numeroF=>numeroF<0)
+
+console.log(`funcion tradicional`);
+console.log(`La cantidad escogida aleatoreamente es de ${ctsa},Este es el tamaño del array sables ${sables.length} `);
+console.log(`Estos sus valores ${sables}, Esta es la cantidad de sables defectuosos: ${rr.length}`);
+console.log(`Esta es la cantidad de sables defectuosos: ${filtro.length}, Y estos son sus valores ${filtro}`);
+
+
+console.log(`funcion Flecha`);
+console.log(`La cantidad escogida aleatoreamente es de ${ctsa}, Este es el tamaño del array sables ${sables.length}`);
+console.log(`Estos sus valores ${sables}`);
+console.log(`Esta es la cantidad de sables defectuosos: ${filtro.length}, Y estos son sus valores ${filtro}`);
 
 
